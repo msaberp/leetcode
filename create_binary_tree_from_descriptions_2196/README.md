@@ -59,3 +59,5 @@ However, this will not give us the root of the tree.
 In order to keep track of which node is the root, we keep track of the child nodes. To do that, we use a set to store all seen children.
 
 In the end, we iterate over the keys of the hash map and whatever node that is not seen as a child node, it is the root of the tree.
+
+[NeetCodeIO's Youtube link](https://www.youtube.com/watch?v=yWkrFfqO7NA)
