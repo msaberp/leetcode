@@ -49,4 +49,13 @@ Explanation: The root node is the node with value 1 since it has no parent. The 
 
 ## Solution
 
-My solution will be explained here...
+We use a hash map (Python dictionary) which will store a tree (sub-tree) for a given key which is the sub-tree's root's value.
+
+We iterate over the description list, if the parent or child is already in the hash map, we will use it, otherwise we will create a new sub-tree.
+
+This approach will create the tree step by step. On each step, we are creating one edge of the graph.
+However, this will not give us the root of the tree.
+
+In order to keep track of which node is the root, we keep track of the child nodes. To do that, we use a set to store all seen children.
+
+In the end, we iterate over the keys of the hash map and whatever node that is not seen as a child node, it is the root of the tree.
