@@ -51,7 +51,7 @@ In order to solve this problem, we have to split it into two sub-problems:
 - collecting tree roots
 
 For deletion step, we need a bottom-up approach which each node, will report to its parent if it is deleted or not.
-In case of deletion the DFS traverse function will return `Nonde`, otherwise it returns the node.
+In case of deletion the DFS traverse function will return `None`, otherwise it returns the node.
 
 During the deletion process, we can keep track of newly generated tree roots. If a node is going to be deleted, we can
 add its children to a list.
