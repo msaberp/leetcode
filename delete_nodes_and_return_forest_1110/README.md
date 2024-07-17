@@ -55,4 +55,4 @@ In case of deletion the DFS traverse function will return `None`, otherwise it r
 
 During the deletion process, we can keep track of newly generated tree roots. If a node is going to be deleted, we can
 add its children to a list.
-At the end, if the old root is still valid (it is not deleted) we also add it in the list and reutrn the list.
+At the end, if the old root is still valid (it is not deleted) we also add it in the list and return the list.
