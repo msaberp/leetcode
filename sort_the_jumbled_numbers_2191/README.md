@@ -2,17 +2,19 @@
 
 ## Medium
 
-You are given a 0-indexed integer array mapping which represents the mapping rule of a shuffled decimal system. `mapping[i] = j` means digit `i` should be mapped to digit `j` in this system.
+You are given a 0-indexed integer array mapping which represents the mapping rule of a shuffled decimal
+system. `mapping[i] = j` means digit `i` should be mapped to digit `j` in this system.
 
-The mapped value of an integer is the new integer obtained by replacing each occurrence of digit `i` in the integer with `mapping[i]` for all `0 <= i <= 9`.
+The mapped value of an integer is the new integer obtained by replacing each occurrence of digit `i` in the integer
+with `mapping[i]` for all `0 <= i <= 9`.
 
-You are also given another integer array nums. Return the array nums sorted in non-decreasing order based on the mapped values of its elements.
+You are also given another integer array nums. Return the array nums sorted in non-decreasing order based on the mapped
+values of its elements.
 
 **Notes**:
 
 Elements with the same mapped values should appear in the same relative order as in the input.
 The elements of nums should only be sorted based on their mapped values and not be replaced by them.
- 
 
 ## Example 1:
 
@@ -20,8 +22,9 @@ The elements of nums should only be sorted based on their mapped values and not 
 
 **Output**: `[338,38,991]`
 
-**Explanation**: 
+**Explanation**:
 Map the number 991 as follows:
+
 1. `mapping[9] = 6`, so all occurrences of the digit 9 will become 6.
 2. `mapping[1] = 9`, so all occurrences of the digit 1 will become 9.
 
@@ -38,14 +41,13 @@ Thus, the sorted array is `[338,38,991]`.
 **Output**: `[123,456,789]`
 
 **Explanation**: 789 maps to 789, 456 maps to 456, and 123 maps to 123. Thus, the sorted array is `[123,456,789]`.
- 
 
 ## Constraints:
 
-- `mapping.length == 10` 
-- `0 <= mapping[i] <= 9` 
-- All the values of `mapping[i]` are unique. 
-- `1 <= nums.length <= 3 * 104` 
+- `mapping.length == 10`
+- `0 <= mapping[i] <= 9`
+- All the values of `mapping[i]` are unique.
+- `1 <= nums.length <= 3 * 104`
 - `0 <= nums[i] < 109`
 
 ## Statistics
